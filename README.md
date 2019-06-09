@@ -5,7 +5,7 @@
 + 原本是因為讀論文常常需要用到 Google 翻譯
 + 在 PDF 檔裡複製的行為表現十分怪異
 + 在網頁和閱讀器之間切換也是相當麻煩
-+ 所以搭配一個可以 Alwasy on top 的命令視窗加上這個工具就可以方便查詢
++ 所以搭配一個可以 Always on top 的命令視窗加上這個工具就可以方便查詢
 
 ## Usage
 + `Usage: py translate.py [-t update_time] [-d destination language] [-n]`
