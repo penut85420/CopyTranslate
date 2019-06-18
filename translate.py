@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from googletrans import Translator
 import pyperclip as pc
 import time
