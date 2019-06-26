@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import time
+from pathlib import Path
 
 import pyperclip as pc
 from googletrans import Translator
@@ -69,7 +70,7 @@ class ClipboardMonitor:
 
 
 class ConfigParser:
-    CONFIG_PATH = './copy_translate_config.ini'
+    CONFIG_PATH = os.path.join(Path.home(), '.copytrans_config')
 
     def __init__(self, *args):
         self.gap = 1
@@ -119,6 +120,7 @@ class ConfigParser:
 
     def load_config(self):
         if os.path.exists(ConfigParser.CONFIG_PATH):
+            print('Confing file is found, loading...')
             with open(ConfigParser.CONFIG_PATH, 'r', encoding='UTF-8') as fin:
                 self.config = json.load(fin)
                 self.gap = self.config['update_time']
